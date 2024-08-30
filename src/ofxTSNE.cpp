@@ -54,8 +54,8 @@ vector<vector<double> > ofxTSNE::iterate(){
     min_.resize(dims);
     max_.resize(dims);
     for (int i=0; i<dims; i++) {
-        min_[i] = numeric_limits<double>::max();
-        max_[i] = numeric_limits<double>::min();
+        min_[i] = std::numeric_limits<double>::max();
+        max_[i] = std::numeric_limits<double>::min();
     }
     
     // unpack Y into tsnePoints
